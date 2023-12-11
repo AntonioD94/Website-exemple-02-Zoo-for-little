@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo for little</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Add this audio element to your body without autoplay -->
+    <audio id="audioPlayer">
+        <source src="/audio/My Dog Is Happy - Reed Mathis.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Add a button or clickable element to start/stop playing -->
+    <button class="hideonmobile" id="audioButton" onclick="toggleAudio()">Play/Pause <br>My Dog Is Happy</button>
+
+    <header>
+        <h1>Zoo for little</h1>
+        <nav>
+            <ul>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=XqZsoesa55w&vl=en">Baby Shark</a></li>
+                <li><a target="_blank" href="https://en.wikipedia.org/wiki/Animal">Animals</a></li>
+                <li><a href="mailto: Zooforlittle@example.com">E-mail us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box">
+            <div class="box-flip">
+                <img src="/images/owl.jpeg" alt="Owl">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-flip">
+                <img src="/images/bear.jpeg" alt="Bear">
+            </div>
+        </div>
+        <div class="additional-box">
+            <!-- Content for the additional div goes here -->
+            <h1>Forests</h1>
+            <p>
+                Forests are diverse ecosystems that can be categorized into various types, including tropical,
+                temperate, and boreal forests. <br class="hideonmobile">Each type of forest harbors a distinct set of
+                flora and fauna.</p>
+        </div>
+        <div class="box">
+            <div class="box-flip">
+                <img src="/images/lion.jpeg" alt="Lion">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-flip">
+                <img src="/images/giraffe.jpeg" alt="Giraffe">
+            </div>
+        </div>
+        <div class="additional-box">
+            <!-- Content for the additional div goes here -->
+            <h1>Savannahs</h1>
+            <p>Savannahs are vast grassland ecosystems characterized by a mix of grasses and scattered trees. <br
+                    class="hideonmobile">They are
+                home to a diverse range of wildlife adapted to the open terrain. </p>
+        </div>
+        <div class="box">
+            <div class="box-flip">
+                <img src="/images/fish.jpeg" alt="Fish">
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-flip">
+                <img src="/images/penguin.jpeg" alt="Penguin">
+            </div>
+        </div>
+        <div class="additional-box">
+            <!-- Content for the additional div goes here -->
+            <h1>Tundra</h1>
+            <p>The tundra is a harsh and cold biome characterized by its low temperatures, permafrost, and limited
+                vegetation. <br class="hideonmobile">Despite these challenging conditions, various animals have adapted
+                to survive in this unique environment.</p>
+        </div>
+        <!-- Form added before the footer -->
+        <div style="margin-bottom: 150px; margin-top: 10px;" class="form-div">
+            <form id="contactForm" class="form">
+                <h2>Contact Us</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Content for the footer goes here -->
+        <p>&copy; 2023 Zoo for little. All rights reserved.<br>Learn about the animals for kindergarten!</p>
+    </div>
+    </div>
+</body>
+
+</html>

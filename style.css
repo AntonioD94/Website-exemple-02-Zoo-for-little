@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #92fcb2, #f0ff68);
+}
+
+#audioButton {
+    position: fixed;
+    top: 50%; /* Adjust the vertical position */
+    right: 0;
+    transform: translateY(-50%);
+    padding: 20px;
+    margin: 17px;
+    background-color: #ffd970;
+    border: 5px solid #FFFFFF; /* Optional: Add a border for visual separation */
+    color: #000000;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+#audioButton:hover {
+    background-color: #ffc500;
+}
+
+p {
+    font-family: 'Agbalumo', sans-serif;
+    letter-spacing: 0.1px;
+}
+
+h1 {
+    font-family: 'Vina Sans', sans-serif;
+    letter-spacing: 5px;
+}
+
+header {
+    background-color: #ffd970;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+    margin: 0;
+}
+
+nav {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #FFFFFF;
+    width: 48%; /* Adjust the width as needed */
+    float: left;
+    margin: 10px auto; /* Center the box horizontally within the container */
+    padding: 20px;
+    border: 5px solid #ffd970; /* Optional: Add a border for visual separation */
+    box-sizing: border-box;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.additional-box {
+    background-color: #FFFFFF;
+    clear: both;
+    width: 100%; /* Set to full width on mobile */
+    max-width: 1000px;
+    margin: auto; /* Center the additional box horizontally within the container */
+    padding: 20px;
+    border: 3px solid #ffd970;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    font-size: 12px;
+    background-color: #ffd970;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+}
+
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.form h2 {
+    font-size: 35px;
+    font-family: 'Vina Sans', sans-serif;
+    text-align: center;
+}
+
+.form label {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form input[type="submit"] {
+    background-color: #ffd970;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 20px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #ffc500;
+}
+
+.form-div {
+    background-color: #FFFFFF;
+    clear: both;
+    width: 100%; /* Set to full width on mobile */
+    max-width: 1000px;
+    margin: auto; /* Center the additional box horizontally within the container */
+    padding: 20px;
+    border: 3px solid #ffd970;
+    box-sizing: border-box;
+    text-align: center;
+    /* Set the background image URL */
+    background-image: url('/images/Jungle.jpg'); opacity: 0.9;;
+
+    /* Set background size and position */
+    background-size: cover;
+    background-position: center;
+    
+    /* Add other styling properties as needed */
+    width: 100%;
+    height: auto; /* Adjust the height as needed */
+    /* Add other styling properties as needed */
+}
+
+@media (max-width: 767px) {
+    .hideonmobile{
+        display: none;
+    }
+    .box,
+    .additional-box {
+        width: 100%; /* Set to full width on mobile */
+        float: none; /* Remove float on mobile */
+    }
+}
+
+.box:hover .box-flip {
+    transform: rotateY(180deg);
+}
